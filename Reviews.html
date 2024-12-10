@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - FemHora</title>
+    <link rel="stylesheet" href="./Styles/designLayout.css">
+    <link rel="shortcut icon" href="./Icon/Picture1.ico" type="image/x-icon">
+</head>
+
+<body>
+    <div id="topBar">
+        <header>
+            <img class="pics" src="./Images/Picture1.png" alt="Logo" width="100" height="100">
+            <h1>FemHora</h1>
+            <h2>Hear What Our Customers Are Saying</h2>
+        </header>
+
+        <nav>
+            <a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./Collections.html">Collection</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./Reviews.html">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./AboutUs.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./ContactUs.html">Contact Us</a>
+        </nav>
+    </div>
+
+    <main>
+        <div>
+            <h1>Leave a review</h1>
+            <p>Leave review for the website FemHora</p> 
+        </div>
+
+        <section class="forReviews">
+            <form action="submit_review.php" method="post">
+                <label for="name">Your Name:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Your Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="review">Your Review:</label><br>
+                <textarea id="review" name="review" rows="5" required></textarea><br><br>
+
+                <label for="rating">Rating:</label><br>
+                <select id="rating" name="rating" required>
+                    <option value="" disabled selected>-- Ratings --</option>
+                    <option value="5">5 - Excellent</option>
+                    <option value="4">4 - Very Good</option>
+                    <option value="3">3 - Good</option>
+                    <option value="2">2 - Fair</option>
+                    <option value="1">1 - Poor</option>
+                </select><br><br>
+
+                <button type="submit">Submit Review</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <nav>
+            <a href="./index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./Collections.html">Collection</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./Reviews.html">Reviews</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./AboutUs.html">About Us</a>&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="./ContactUs.html">Contact Us</a>
+        </nav>
+
+        <address>
+            <p>325, boul. de la Cité-des-Jeunes<br> Gatineau, QC<br> Canada<br> J8Y 6T3</p>
+            <a href="tel:8193737723">(819) 373-7723</a><br>
+            <a href="mailto:Femhora@watches.ca">Femhora@watches.ca</a>
+        </address>
+
+        <small>&copy; 2024, FemHora. All rights reserved.</small>
+    </footer>
+</body>
+
+</html>
